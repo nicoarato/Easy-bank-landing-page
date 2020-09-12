@@ -3,6 +3,7 @@
 @import "./menu.scss";
 @import "./why.scss";
 @import "./latestArticles.scss";
+@import "./footer.scss";
 :root {
     --grayBlue: hsl(233, 8%, 62%);
     --gray: hsl(220, 16%, 96%);
@@ -65,4 +66,34 @@ body {
     border-radius: 1.5em;
     color: var(--white);
     background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--brightCyan) 100%);
+}
+
+@mixin icon {
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    background-repeat: no-repeat;
+}
+
+.icon {
+    &__facebook {
+        @include icon;
+        background-image: url('../images/icon-facebook.svg');
+    }
+    &__youtube {
+        @include icon;
+        background-image: url('../images/icon-youtube.svg');
+    }
+    &__twitter {
+        @include icon;
+        background-image: url('../images/icon-twitter.svg');
+    }
+    &__pinterest {
+        @include icon;
+        background-image: url('../images/icon-pinterest.svg');
+    }
+    &__instagram {
+        @include icon;
+        background-image: url('../images/icon-instagram.svg');
+    }
 }
