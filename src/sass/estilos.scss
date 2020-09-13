@@ -33,6 +33,10 @@ body {
 
 .wrapper {
     padding: 0 var(--wrapperSpace);
+    max-width: calc(1115px + 1.5em);
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 @mixin title {
@@ -60,7 +64,7 @@ body {
 }
 
 .button {
-    // border: 1px solid red;
+    border-color: transparent;
     padding: .9em 2.2em;
     font-size: 1em;
     border-radius: 1.5em;
